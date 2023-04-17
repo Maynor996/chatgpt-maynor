@@ -271,6 +271,8 @@ async function exportMD(messages: ChatMessage[]) {
   )
 }
 async function exportFile(messages: ChatMessage[]) {
+  const fs = require('fs');
+  const path = require('path');
   const role = {
     system: "系统",
     user: "我",
